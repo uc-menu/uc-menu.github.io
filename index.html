@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="google" content="nositelinkssearchbox">
+        <meta name="google" content="notranslate">
+        <meta name="googlebot" content="noindex,nofollow">
+        <meta name="robots" content="noindex,nofollow">
+    </head>
+    <body>
+        <main>
+            <noscript><h1>This page requires that you enable JavaScript.</h1></noscript>
+            <h3>Beverages</h3>
+            <div data-keybind="b" class="menu">
+                <div class="item" data-price="150">
+                    <label>Iced Coffee</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="150">
+                    <label>Matcha Latte</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="150">
+                    <label>Pumpkin Spice</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="200">
+                    <label>Cattucino</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="125">
+                    <label>Boba Tea</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="125">
+                    <label>Green Tea</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="250">
+                    <label>Lemonade</label>
+                    <input type="number" min="0" value="">
+                </div>
+            </div>
+            <h3>Food</h3>
+            <div data-keybind="f" class="menu">
+                <div class="item" data-price="250">
+                    <label>Fruit Explosion</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="150">
+                    <label>Frozen Yogurt</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="175">
+                    <label>Salad</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="125">
+                    <label>Cookies</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="150">
+                    <label>Apple Crumble</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="175">
+                    <label>Pancakes</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="125">
+                    <label>Cat Donut</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="125">
+                    <label>Cat Cupcake</label>
+                    <input type="number" min="0" value="">
+                </div>
+            </div>
+            <h3>Specials</h3>
+            <div data-keybind="s" class="menu">
+                <div class="item" data-price="300">
+                    <label>Colin's Choice</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="300">
+                    <label>Dave's Choice</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="300">
+                    <label>Judy's Choice</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="300">
+                    <label>Velma's Choice</label>
+                    <input type="number" min="0" value="">
+                </div>
+            </div>
+            <h3>Misc items.</h3>
+            <div data-keybind="m" class="menu">
+                <div class="item" data-price="5000">
+                    <label>Mystery Box</label>
+                    <input type="number" min="0" value="">
+                </div>
+            </div>
+            <h3>Delivery</h3>
+            <div data-keybinds="d" class="menu">
+                <div class="item" data-price="250">
+                    <label>Los Santos</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="500">
+                    <label>Sandy Shores</label>
+                    <input type="number" min="0" value="">
+                </div>
+                <div class="item" data-price="700">
+                    <label>Paleto Bay</label>
+                    <input type="number" min="0" value="">
+                </div>
+            </div>
+            <h4>Vouchers</h4>
+            <div data-keybind="v">
+                <label>Discount (no percent sign)</label>
+                <input type="number" value="0" min="0" max="100" id="discount">
+                <button onclick="setDiscount('25')">25%</button>
+                <button onclick="setDiscount('50')">50%</button>
+            </div>
+            <label class="cen">Employee state ID</label>
+            <input class="cen" type="text" id="employee">
+            <p>Total: <span id="total"></span><br>
+            Commission (30%): <span id="commission"></span></p>
+            <button onclick="calculate()">Calculate</button>
+            <button onclick="submit()">Submit</button>
+            <button onclick="reset()">Reset</button>
+        </main>
+        <footer></footer>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

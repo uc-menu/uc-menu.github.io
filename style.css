@@ -1,0 +1,36 @@
+:root {
+  --bgColor: #f9c8ef;
+  --txtColor: #7b38a0;
+  --sndColor: #f8e0de;
+  --border: #b1fac6;
+}
+
+body,input,button {
+  background-color: var(--bgColor);
+  color: var(--txtColor);
+  font-family: sans-serif;
+}
+input,button { background-color: var(--sndColor); }
+
+main {
+  max-width: 700px;
+  margin:auto;
+  border: 2px var(--border) solid;
+  padding: 1%;
+}
+
+main h3, main h4 {
+    text-align:center;
+    clear:both;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.item {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.item:nth-child(1n) { float:left; }
+.item:nth-child(2n) { float:right; }
+
+.cen { margin:auto !important;float:unset !important;text-align:center !important;}
